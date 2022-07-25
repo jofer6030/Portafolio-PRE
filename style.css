@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --font-family: "Poppins", sans-serif;
+  --color-blanco: #fff;
+  --color-negro: #000;
+  --color-azul: #007fef;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+.container {
+  max-width: 1040px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/* HEADER */
+.header {
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 0;
+}
+
+.navbar-logo {
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.navbar-nav {
+  display: flex;
+  list-style: none;
+  gap: 80px;
+}
+
+.navbar-nav li a {
+  text-decoration: none;
+  color: var(--color-negro);
+  font-size: 20px;
+}
+.navbar-nav li a:hover {
+  color: var(--color-azul);
+  text-decoration: underline;
+}
+
+.presentation {
+  margin-top: 73px;
+}
+
+.presentation-info-name,
+.presentation-info-profession {
+  font-size: 48px;
+  font-weight: 400;
+}
+
+.presentation-info-profession span {
+  font-weight: 700;
+  color: var(--color-azul);
+}
+
+.presentation-activity {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+.presentation-activity span {
+  font-weight: 700;
+}
+.btn-resume {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+  border: none;
+  font-size: 20px;
+  padding: 16px 32px;
+  border-radius: 60px;
+}
+.btn-resume:hover {
+  background-color: var(--color-azul);
+}
+
+/* MAIN */
+.main {
+  margin-top: 10rem;
+}
+.project {
+  border-top: 1px solid var(--color-negro);
+  padding: 60px 0px;
+}
+
+.project-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.project-title h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.project-title h3 span {
+  display: block;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.project-title span {
+  font-size: 3rem;
+}
+
+.project-img {
+  width: 100%;
+}
+.project-img img {
+  width: 100%;
+}
+
+/* FOOTER */
+.footer {
+  background-color: var(--color-negro);
+  color: var(--color-blanco);
+}
+.container-footer {
+  padding: 80px 56px;
+}
+
+.container-footer p {
+  font-size: 36px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.container-footer h3 {
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.container-footer ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
